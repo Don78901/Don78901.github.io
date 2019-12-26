@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <script>
+            var courses=[];
+            var course1=prompt("Enter First Course");
+            var course2=prompt("Enter Second Course");
+            var course3=prompt("Enter Third Course");
+            var course4=prompt("Enter Fourth Course");
+            var course5=prompt("Enter Fifth Course");
+            courses.push(course1,course2,course3,course4,course5);
+            alert(courses);
+            var course1=prompt(course1,course1);
+            var course2=prompt(course2,course2);
+            var course3=prompt(course3,course3);
+            var course4=prompt(course4,course4);
+            var course5=prompt(course5,course5);
+            courses.splice(0,1,course1);
+            courses.splice(1,1,course2);
+            courses.splice(2,1,course3);
+            courses.splice(3,1,course4);
+            courses.splice(4,1,course5);
+            alert(courses);
+            </script>
+
+    </body>
+</html>
