@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <style>
+            table{
+                text-align: center;
+                position: relative;left: 500px;top: 200px;
+                width: 350px;
+                height: 130px;
+                border-style: none;
+                  background: black;
+                  opacity: 0.7;
+                  border-style: dotted;
+                  border-color:whitesmoke;
+                  border-radius: 10px;
+            }
+           th,#g{
+               color: springgreen;
+           }
+           td{
+               color:magenta;
+           }
+           h2{
+               color: dodgerblue;
+               position: relative;left: 500px;top:200px;
+               text-transform: capitalize;
+               font-weight: bold;
+           }
+           
+        </style>
+        <h2><i><u>Marksheet</u></i></h2>
+             <table border="2">
+                 <tr>
+                     <th>Subject</th>
+                     <th>Obtained Marks</th>
+                     <th>Total Marks</th>
+                 </tr>
+                 <tr>
+                     <td id="g">English</td>
+                     <td id="output"></td>
+                     <td>100</td>
+                 </tr>
+                 <tr>
+                    <td id="g">Math</td>
+                    <td id="output1"></td>
+                    <td>100</td>
+                 </tr>
+                 <tr>
+                     <td id="g">Physics</td>
+                     <td id="output2"></td>
+                     <td>100</td>
+                 </tr>
+                 <tr>
+                     <td id="g">Chemistry</td>
+                     <td id="output3"></td>
+                     <td>100</td>
+                 </tr>
+                 <tr>
+                     <td id="g">Computer Science</td>
+                     <td id="output4"></td>
+                     <td>100</td>
+                 </tr>
+                 <tr>
+                     <td id="g">Total</td>
+                     <td id="t"></td>
+                     <td>500</td>
+                 </tr>
+                 <tr>
+                     <td id="g">Percentage</td>
+                     <td colspan="2" id="p"><span>&#37;</span></td>
+                 </tr>
+                 
+
+             </table>
+             <script type="text/javascript">
+                var a=parseFloat(prompt("Enter your English Marks"));
+                var b=parseFloat(prompt("Enter your Math Marks"));
+                var c=parseFloat(prompt("Enter your Physics Marks"));
+                var d=parseFloat(prompt("Enter your Chemistry Marks"));
+                var e=parseFloat(prompt("Enter your Computer Science Marks"));
+                var aa=a+b+c+d+e;
+                var p=parseFloat(aa/500*100);
+             var out=document.getElementById("output");
+             out.innerHTML=a;
+             var out1=document.getElementById("output1");
+             out1.innerHTML=b;
+             var out2=document.getElementById("output2");
+             out2.innerHTML=c;
+             var out3=document.getElementById("output3");
+             out3.innerHTML=d;
+             var out4=document.getElementById("output4");
+             out4.innerHTML=e;
+            var tot=document.getElementById("t");
+            tot.innerHTML=aa;
+            var per=document.getElementById("p");
+            per.innerHTML=p;
+                //alert("You Scored "+aa+" And Percentage is "+p+"%");
+                 </script> 
+    </body>
+</html>
