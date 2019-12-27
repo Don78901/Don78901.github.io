@@ -1,0 +1,16 @@
+html>
+    <head>
+        <script>
+            var dec=prompt("Enter a Decimal Value");
+            var num= Math.ceil(dec);
+            alert(num);
+            var txt=prompt("Type a Sentence");
+            var newtxt=txt.slice(0,num);
+            var revtxt='';
+            for(i=num-1; i>=0; i--){
+                revtxt+=newtxt[i];
+            }
+            alert(revtxt);
+        </script>
+    </head>
+</html>
